@@ -1,4 +1,4 @@
-package main.java.mergeTwoSortedLinkedLists21;
+package main.java.mergeTwoSortedLinkedLists021;
 
 import main.java.ListNode;
 import main.java.utils.LinkedListUtil;

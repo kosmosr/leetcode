@@ -16,7 +16,7 @@ public class ListNode {
         this.val = val;
     }
 
-/*    @Override
+    @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
         ListNode cur = this;
@@ -30,5 +30,5 @@ public class ListNode {
             }
         }
         return "ListNode " + builder.toString();
-    }*/
+    }
 }
