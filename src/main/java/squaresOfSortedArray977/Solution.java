@@ -20,16 +20,51 @@ public class Solution {
     public static void main(String[] args) {
         Solution solution = new Solution();
         int[] a = ArrayUtil.constructorArray(-7, -3, 2, 3, 11);
-        int[] ints = solution.sortedSquares(a);
-        System.out.println(ints);
+//        int[] a = ArrayUtil.constructorArray(-4, -1, 0, 3, 10);
+        int[] ints = solution.sortedSquares2(a);
+        System.out.println(Arrays.toString(ints));
     }
 
+    /**
+     * 时间复杂度: O(nlogn), 空间复杂度：O(n)
+     */
     public int[] sortedSquares(int[] A) {
         int[] array = new int[A.length];
         for (int i = 0; i < A.length; i++) {
             array[i] = A[i] * A[i];
         }
         Arrays.sort(array);
+        return array;
+    }
+
+    /**
+     * 双指针解法， 时间复杂度O(n) 空间复杂度：O(n)
+     */
+    public int[] sortedSquares2(int[] A) {
+        int length = A.length;
+        int[] array = new int[length];
+        int left = -1, right = 0;
+        // 确定负、正指针指向的位置
+        while (left + 1 < length && A[left + 1] < 0) {
+            left++;
+            right++;
+        }
+        int arrayIndex = 0;
+        while (left >= 0 && right < length) {
+            if (A[left] * A[left] > A[right] * A[right]) {
+                array[arrayIndex++] = A[right] * A[right];
+                right++;
+            } else {
+                array[arrayIndex++] = A[left] * A[left];
+                left--;
+            }
+        }
+        while (right < length) {
+            array[arrayIndex++] = A[right] * A[right++];
+        }
+        while (left >= 0) {
+            array[arrayIndex++] = A[left] * A[left--];
+        }
         return array;
     }
 }

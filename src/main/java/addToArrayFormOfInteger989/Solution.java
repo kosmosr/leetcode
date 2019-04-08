@@ -2,9 +2,7 @@ package main.java.addToArrayFormOfInteger989;
 
 import main.java.utils.ArrayUtil;
 
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -17,37 +15,18 @@ public class Solution {
         System.out.println(solution.addToArrayForm(ArrayUtil.constructorArray(2, 1, 5), 806));
     }
 
+    /**
+     * 时间复杂度 O(n)
+     */
     public List<Integer> addToArrayForm(int[] A, int K) {
-        int kLength = Integer.toString(K).length();
-        List<Integer> res = new ArrayList<>();
-        ArrayDeque<Integer> queue = new ArrayDeque<>();
-        int mod = kLength % A.length;
-        List<int[]> ints = Collections.singletonList(A);
-
-        while (K > 0) {
-            queue.push(K % 10);
-            K /= 10;
+        List<Integer> res = new LinkedList<>();
+        for (int i = A.length - 1; i >= 0; --i) {
+            res.add(0, (A[i] + K) % 10);
+            K = (A[i] + K) / 10;
         }
-        res.add(0, 1);
-        for (int i = 0; i < A.length; i++) {
-            if (i >= mod) {
-                int sum = A[i] + queue.peek();
-                if (sum > 9) {
-                    sum -= 10;
-                    if (i == 0) {
-                        res.add(1);
-                        continue;
-                    } else {
-                        queue.pop();
-                        int integer = res.get(i - 1);
-                        res.set(i - 1, ++integer);
-                    }
-                    A[i] = sum;
-                } else {
-                    A[i] = sum;
-                }
-            }
-            res.add(A[i]);
+        while (K > 0) {
+            res.add(0, K % 10);
+            K /= 10;
         }
         return res;
     }
