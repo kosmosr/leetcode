@@ -13,7 +13,7 @@
 ## 题目列表
 
 |#|Title|Solution|Difficulty|
-|:--:|:------:|:---------:|:---------: | :--------: |
+|:--:|:------:|:---------: | :--------: |
 |1|[Two Sum](https://leetcode-cn.com/problems/two-sum/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/twoSum001)|EASY|
 |2|[Add Two Numbers](https://leetcode-cn.com/problems/add-two-numbers/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/addTwoNumbers002)|Medium|
 |7|[Reverse Integer](https://leetcode-cn.com/problems/reverse-integer/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/reverseInteger007)|EASY|

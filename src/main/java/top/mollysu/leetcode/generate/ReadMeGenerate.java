@@ -63,8 +63,10 @@ public class ReadMeGenerate {
             return cookies != null ? cookies : new ArrayList<>();
         }
     }).build();
-    private static final String[] DIFFICULTY_STR_CN = new String[]{"简单", "中等", "困难"};
+
     private static final String[] DIFFICULTY_STR_EN = new String[]{"EASY", "Medium", "Hard"};
+
+    private static final String[] DIFFICULTY_STR_CN = new String[]{"简单", "中等", "困难"};
     private static List<String> solvedSolutions;
 
     private static void setCsrfToken() {
@@ -131,7 +133,7 @@ public class ReadMeGenerate {
             StringBuilder contentBuilder = new StringBuilder();
             contentBuilder
                     .append("|#|Title|Solution|Difficulty|").append('\n')
-                    .append("|:--:|:------:|:---------:|:---------: | :--------: |").append('\n');
+                    .append("|:--:|:------:|:---------: | :--------: |").append('\n');
             statStatusPairs.forEach(e -> {
                 AllProblemsModel.Stat stat = e.getStat();
                 String questionNum = String.format("%03d", stat.getFrontendQuestionId());
@@ -155,7 +157,7 @@ public class ReadMeGenerate {
 
 
     public static void main(String[] args) {
-        login("null", "null");
+        login("zmhwft@gmail.com", "Zengminghao1997");
         getAll();
     }
 }
