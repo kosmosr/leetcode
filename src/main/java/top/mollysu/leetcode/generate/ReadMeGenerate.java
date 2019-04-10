@@ -8,10 +8,10 @@ import org.apache.logging.log4j.Logger;
 import top.mollysu.leetcode.generate.model.AllProblemsModel;
 import top.mollysu.leetcode.generate.model.LeetCodeLoginModel;
 
+import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
+import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 
 /**
@@ -24,6 +24,8 @@ public class ReadMeGenerate {
     private static final String BASE_URL = "https://leetcode-cn.com";
 
     private static final String BASE_SOLUTION_URL = "https://leetcode-cn.com/problems/";
+
+    private static final String BASE_SOLVED_SOLUTION_URL = "https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/";
 
     private static LeetCodeLoginModel loginModel = new LeetCodeLoginModel();
 
@@ -61,6 +63,9 @@ public class ReadMeGenerate {
             return cookies != null ? cookies : new ArrayList<>();
         }
     }).build();
+    private static final String[] DIFFICULTY_STR_CN = new String[]{"简单", "中等", "困难"};
+    private static final String[] DIFFICULTY_STR_EN = new String[]{"EASY", "Medium", "Hard"};
+    private static List<String> solvedSolutions;
 
     private static void setCsrfToken() {
         Request indexRequest = new Request.Builder()
@@ -96,6 +101,13 @@ public class ReadMeGenerate {
     }
 
     public static void getAll() {
+        File file = new File("src/main/java/top/mollysu/leetcode/solutions/");
+        String[] fileNames = file.list();
+        if (fileNames != null && fileNames.length > 0) {
+            solvedSolutions = Arrays.stream(fileNames)
+                    .sorted(Comparator.comparingInt(e -> Integer.valueOf(e.substring(e.length() - 3))))
+                    .collect(Collectors.toList());
+        }
         Request allRequest = new Request.Builder().url(BASE_URL + "/api/problems/all/").build();
         try (Response response = client.newCall(allRequest).execute()) {
             log.info("response: {}", response);
@@ -116,18 +128,26 @@ public class ReadMeGenerate {
                     .append("  |  ").append(allProblemsModel.getAcEasy())
                     .append("  |  ").append(allProblemsModel.getAcMedium())
                     .append("  |  ").append(allProblemsModel.getAcHard()).append("  |  ").append('\n');
-            String middle = middleBuilder.toString();
             StringBuilder contentBuilder = new StringBuilder();
             contentBuilder
                     .append("|#|Title|Solution|Difficulty|").append('\n')
                     .append("|:--:|:------:|:---------:|:---------: | :--------: |").append('\n');
             statStatusPairs.forEach(e -> {
                 AllProblemsModel.Stat stat = e.getStat();
+                String questionNum = String.format("%03d", stat.getFrontendQuestionId());
+                AtomicReference<String> solvedSolutionURL = new AtomicReference<>("");
+                solvedSolutions.stream()
+                        .filter(solution -> solution.substring(solution.length() - 3).equals(questionNum))
+                        .findFirst()
+                        .ifPresent(solvedSolutionURL::set);
                 contentBuilder.append("|").append(stat.getFrontendQuestionId())
                         .append("|[").append(stat.getQuestionTitle()).append("]")
-                        .append("(").append(BASE_SOLUTION_URL).append(stat.getQuestionTitleSlug()).append("/)");
+                        .append("(").append(BASE_SOLUTION_URL).append(stat.getQuestionTitleSlug()).append("/)|[JAVA](")
+                        .append(BASE_SOLVED_SOLUTION_URL).append(solvedSolutionURL.get())
+                        .append(")|").append(DIFFICULTY_STR_EN[e.getDifficulty().getLevel() - 1]).append("|").append('\n');
             });
-            System.out.println(middle);
+            System.out.println(middleBuilder.toString());
+            System.out.println(contentBuilder.toString());
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -137,11 +157,5 @@ public class ReadMeGenerate {
     public static void main(String[] args) {
         login("null", "null");
         getAll();
-       /* File file = new File("src/main/java/top.mollysu.leetcode.solutions");
-        String[] fileNames = file.list();
-        List<String> collect = Arrays.stream(fileNames)
-                .sorted(Comparator.comparingInt(e -> Integer.valueOf(e.substring(e.length() - 3))))
-                .collect(Collectors.toList());
-        System.out.println(file);*/
     }
 }
