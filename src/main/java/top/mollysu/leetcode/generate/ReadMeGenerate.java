@@ -7,6 +7,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import top.mollysu.leetcode.generate.model.AllProblemsModel;
 import top.mollysu.leetcode.generate.model.LeetCodeLoginModel;
+import top.mollysu.leetcode.generate.model.ProblemStatusEnum;
 
 import java.io.File;
 import java.io.IOException;
@@ -118,7 +119,7 @@ public class ReadMeGenerate {
             List<AllProblemsModel.Pairs> statStatusPairs = allProblemsModel.getStatStatusPairs()
                     .stream()
                     .sorted(AllProblemsModel.Pairs::compareTo)
-                    .filter(e -> e.getStatus() != null)
+                    .filter(e -> e.getStatus() != null && e.getStatus().equals(ProblemStatusEnum.SOLVED.getStatus()))
                     .collect(Collectors.toList());
             ;
             StringBuilder middleBuilder = new StringBuilder();
