@@ -27,11 +27,10 @@ public class ReadMeGenerate {
     private static final String BASE_SOLUTION_URL = "https://leetcode-cn.com/problems/";
 
     private static final String BASE_SOLVED_SOLUTION_URL = "https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/";
-
+    private static final String[] DIFFICULTY_STR_EN = new String[]{"EASY", "Medium", "Hard"};
+    private static final String[] DIFFICULTY_STR_CN = new String[]{"简单", "中等", "困难"};
     private static LeetCodeLoginModel loginModel = new LeetCodeLoginModel();
-
     private static HashMap<String, List<Cookie>> cookieStore = new HashMap<>();
-
     private static OkHttpClient client = new OkHttpClient.Builder().cookieJar(new CookieJar() {
         @Override
         public void saveFromResponse(HttpUrl httpUrl, List<Cookie> list) {
@@ -64,10 +63,6 @@ public class ReadMeGenerate {
             return cookies != null ? cookies : new ArrayList<>();
         }
     }).build();
-
-    private static final String[] DIFFICULTY_STR_EN = new String[]{"EASY", "Medium", "Hard"};
-
-    private static final String[] DIFFICULTY_STR_CN = new String[]{"简单", "中等", "困难"};
     private static List<String> solvedSolutions;
 
     private static void setCsrfToken() {
@@ -158,7 +153,7 @@ public class ReadMeGenerate {
 
 
     public static void main(String[] args) {
-        login("zmhwft@gmail.com", "Zengminghao1997");
+        login("null", "null");
         getAll();
     }
 }

@@ -6,7 +6,7 @@
 
 | 总题数 | 已解决 | 简单 | 中等 | 困难 |
 | :----: | :----: | :--: | :--: | :----: |
-|  852  |  43  |  39  |  4  |  0  |
+|  852  |  50  |  44  |  6  |  0  |  
 
 
 
@@ -22,19 +22,26 @@
 |21|[Merge Two Sorted Lists](https://leetcode-cn.com/problems/merge-two-sorted-lists/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/mergeTwoSortedLinkedLists021)|EASY|
 |26|[Remove Duplicates from Sorted Array](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/removeDuplicatesIsSortedArray026)|EASY|
 |27|[Remove Element](https://leetcode-cn.com/problems/remove-element/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/removeElement027)|EASY|
+|33|[Search in Rotated Sorted Array](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/searchInRotatedSortedArray033)|Medium|
 |35|[Search Insert Position](https://leetcode-cn.com/problems/search-insert-position/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/searchInsertPosition035)|EASY|
+|58|[Length of Last Word](https://leetcode-cn.com/problems/length-of-last-word/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/lengthOfLastWord058)|EASY|
 |61|[Rotate List](https://leetcode-cn.com/problems/rotate-list/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/rotateLinkedList061)|Medium|
 |66|[Plus One](https://leetcode-cn.com/problems/plus-one/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/plusOne066)|EASY|
+|70|[Climbing Stairs](https://leetcode-cn.com/problems/climbing-stairs/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/)|EASY|
+|81|[Search in Rotated Sorted Array II](https://leetcode-cn.com/problems/search-in-rotated-sorted-array-ii/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/searchInRotatedSortedArrayII081)|Medium|
 |83|[Remove Duplicates from Sorted List](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-list/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/removeDuplicatesFromSortedLinkedList083)|EASY|
 |88|[Merge Sorted Array](https://leetcode-cn.com/problems/merge-sorted-array/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/mergeSortedArray088)|EASY|
 |100|[Same Tree](https://leetcode-cn.com/problems/same-tree/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/sameTree100)|EASY|
+|112|[Path Sum](https://leetcode-cn.com/problems/path-sum/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/)|EASY|
 |141|[Linked List Cycle](https://leetcode-cn.com/problems/linked-list-cycle/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/linkedListCycle141)|EASY|
 |160|[Intersection of Two Linked Lists](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/intersectionOfTwoLinkedLists160)|EASY|
 |167|[Two Sum II - Input array is sorted](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/twoSumIIArrayIsSorted167)|EASY|
 |182|[Duplicate Emails](https://leetcode-cn.com/problems/duplicate-emails/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/)|EASY|
+|183|[Customers Who Never Order](https://leetcode-cn.com/problems/customers-who-never-order/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/)|EASY|
 |189|[Rotate Array](https://leetcode-cn.com/problems/rotate-array/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/rotateArray189)|EASY|
 |203|[Remove Linked List Elements](https://leetcode-cn.com/problems/remove-linked-list-elements/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/removeLinkedListElements203)|EASY|
 |206|[Reverse Linked List](https://leetcode-cn.com/problems/reverse-linked-list/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/)|EASY|
+|217|[Contains Duplicate](https://leetcode-cn.com/problems/contains-duplicate/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/containsDuplicate217)|EASY|
 |237|[Delete Node in a Linked List](https://leetcode-cn.com/problems/delete-node-in-a-linked-list/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/)|EASY|
 |292|[Nim Game](https://leetcode-cn.com/problems/nim-game/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/nimGame292)|EASY|
 |344|[Reverse String](https://leetcode-cn.com/problems/reverse-string/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/reverseString344)|EASY|
