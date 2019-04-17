@@ -6,7 +6,7 @@
 
 | 总题数 | 已解决 | 简单 | 中等 | 困难 |
 | :----: | :----: | :--: | :--: | :----: |
-|  852  |  50  |  44  |  6  |  0  |  
+|  852  |  55  |  48  |  7  |  0  |  
 
 
 
@@ -17,12 +17,15 @@
 |1|[Two Sum](https://leetcode-cn.com/problems/two-sum/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/twoSum001)|EASY|
 |2|[Add Two Numbers](https://leetcode-cn.com/problems/add-two-numbers/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/addTwoNumbers002)|Medium|
 |7|[Reverse Integer](https://leetcode-cn.com/problems/reverse-integer/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/reverseInteger007)|EASY|
+|9|[Palindrome Number](https://leetcode-cn.com/problems/palindrome-number/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/palindromeNumber009)|EASY|
+|13|[Roman to Integer](https://leetcode-cn.com/problems/roman-to-integer/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/romanToInteger013)|EASY|
 |19|[Remove Nth Node From End of List](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/removeNthNodeFromEndOfList019)|Medium|
 |20|[Valid Parentheses](https://leetcode-cn.com/problems/valid-parentheses/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/validParentheses020)|EASY|
 |21|[Merge Two Sorted Lists](https://leetcode-cn.com/problems/merge-two-sorted-lists/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/mergeTwoSortedLinkedLists021)|EASY|
 |26|[Remove Duplicates from Sorted Array](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/removeDuplicatesIsSortedArray026)|EASY|
 |27|[Remove Element](https://leetcode-cn.com/problems/remove-element/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/removeElement027)|EASY|
 |33|[Search in Rotated Sorted Array](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/searchInRotatedSortedArray033)|Medium|
+|34|[Find First and Last Position of Element in Sorted Array](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/findFirstAndLastPositionOfElementInSortedArray034)|Medium|
 |35|[Search Insert Position](https://leetcode-cn.com/problems/search-insert-position/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/searchInsertPosition035)|EASY|
 |58|[Length of Last Word](https://leetcode-cn.com/problems/length-of-last-word/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/lengthOfLastWord058)|EASY|
 |61|[Rotate List](https://leetcode-cn.com/problems/rotate-list/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/rotateLinkedList061)|Medium|
@@ -46,6 +49,8 @@
 |292|[Nim Game](https://leetcode-cn.com/problems/nim-game/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/nimGame292)|EASY|
 |344|[Reverse String](https://leetcode-cn.com/problems/reverse-string/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/reverseString344)|EASY|
 |349|[Intersection of Two Arrays](https://leetcode-cn.com/problems/intersection-of-two-arrays/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/intersectionOfTwoArrays349)|EASY|
+|350|[Intersection of Two Arrays II](https://leetcode-cn.com/problems/intersection-of-two-arrays-ii/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/intersectionOfTwoArraysII350)|EASY|
+|448|[Find All Numbers Disappeared in an Array](https://leetcode-cn.com/problems/find-all-numbers-disappeared-in-an-array/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/findAllNumbersDisappearedInAnArray448)|EASY|
 |509|[Fibonacci Number](https://leetcode-cn.com/problems/fibonacci-number/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/fibonacciNumber509)|EASY|
 |535|[Encode and Decode TinyURL](https://leetcode-cn.com/problems/encode-and-decode-tinyurl/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/encodeAndDecodeTinyUrl535)|Medium|
 |541|[Reverse String II](https://leetcode-cn.com/problems/reverse-string-ii/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/reverseStringII541)|EASY|
