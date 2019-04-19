@@ -6,7 +6,7 @@
 
 | 总题数 | 已解决 | 简单 | 中等 | 困难 |
 | :----: | :----: | :--: | :--: | :----: |
-|  852  |  55  |  48  |  7  |  0  |  
+|  852  |  58  |  50  |  8  |  0  | 
 
 
 
@@ -43,9 +43,12 @@
 |183|[Customers Who Never Order](https://leetcode-cn.com/problems/customers-who-never-order/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/)|EASY|
 |189|[Rotate Array](https://leetcode-cn.com/problems/rotate-array/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/rotateArray189)|EASY|
 |203|[Remove Linked List Elements](https://leetcode-cn.com/problems/remove-linked-list-elements/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/removeLinkedListElements203)|EASY|
+|204|[Count Primes](https://leetcode-cn.com/problems/count-primes/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/countPrimes204)|EASY|
 |206|[Reverse Linked List](https://leetcode-cn.com/problems/reverse-linked-list/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/)|EASY|
 |217|[Contains Duplicate](https://leetcode-cn.com/problems/contains-duplicate/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/containsDuplicate217)|EASY|
 |237|[Delete Node in a Linked List](https://leetcode-cn.com/problems/delete-node-in-a-linked-list/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/)|EASY|
+|263|[Ugly Number](https://leetcode-cn.com/problems/ugly-number/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/uglyNumber263)|EASY|
+|264|[Ugly Number II](https://leetcode-cn.com/problems/ugly-number-ii/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/uglyNumberII264)|Medium|
 |292|[Nim Game](https://leetcode-cn.com/problems/nim-game/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/nimGame292)|EASY|
 |344|[Reverse String](https://leetcode-cn.com/problems/reverse-string/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/reverseString344)|EASY|
 |349|[Intersection of Two Arrays](https://leetcode-cn.com/problems/intersection-of-two-arrays/)|[JAVA](https://github.com/kosmosr/leetcode/tree/master/src/main/java/top/mollysu/leetcode/solutions/intersectionOfTwoArrays349)|EASY|
